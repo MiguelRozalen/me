@@ -22,18 +22,17 @@ export class ProfileComponent implements OnInit {
     map:IconDefinition = faMapMarkerAlt
     mobile:IconDefinition = faMobile
     envelope:IconDefinition = faEnvelope
-    URL:string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
-    //URL:string = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+    //URL:string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+    URL:string = "https://cors.io/?https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
     IMG:SafeStyle; 
     isBingWallpaper:boolean
     constructor(private _sanitizer: DomSanitizer, private http:HttpClient) {
         this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('./assets/img/madrid.jpg')`);
         this.http.get(this.URL).subscribe((res:any) => {
-            console.log(res.images)
+            //console.log(res.images)
             this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('${"https://www.bing.com/"+res.images[0].url}')`);
             this.isBingWallpaper = true;
         });
-    
     }
 
     ngOnInit() {
