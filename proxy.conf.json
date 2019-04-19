@@ -1,0 +1,7 @@
+{
+    "/HPImageArchive*":{
+        "target":"https://www.bing.com",
+        "secure":false,
+        "changeOrigin":true
+    }
+}

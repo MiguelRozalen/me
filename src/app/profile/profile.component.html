@@ -1,0 +1,549 @@
+<div class="wrapper">
+    <div class="page-header page-header-xs" data-parallax="true" [style.backgroundImage]="IMG">
+        <div class="filter"></div>
+    </div>
+    <div class="section profile-content">
+        <div class="container">
+            <div class="owner">
+                <div class="avatar">
+                    <img src="./assets/img/faces/me_blurry.png" alt="Circle Image"
+                        class="img-circle img-no-padding img-responsive">
+                </div>
+                <div class="name">
+                    <h4 class="title">Miguel Á. Rozalén
+                        <br />
+                    </h4>
+                    <h6 class="description">Full Stack Developer</h6>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6 ml-auto mr-auto text-center">
+                    <p>Madrid. 10 de Marzo de 1993.
+                        <br />Ingenierio en Informática por la Universidad Carlos III de Madrid</p>
+                    <br />
+                    <a class="btn btn-outline-default btn-round" href="./assets/downloables/CV ES Miguel_19.pdf"
+                        download="CV ES Miguel_19"><i class="fa fa-download"></i> Curriculum ES</a>
+                    <a style="margin: 5px;" class="btn btn-outline-default btn-round"
+                        href="./assets/downloables/CV EN Miguel_19.pdf" download="CV EN Miguel_19"><i
+                            class="fa fa-download"></i> Curriculum EN</a>
+                </div>
+            </div>
+        </div>
+        <div *ngIf="isBingWallpaper"
+            style="position: absolute; top: -30px; right: 0; font-size: smaller; padding-right: 25px;  padding-bottom: 25px; color:#d9d9d9">
+            <i>Background powered by <a target="_newtab" href="https://miguelrozalen.github.io/bing-wallpaper/"><span
+                        style="color: #ffffff;">Bing Wallpaper<span></span></span></a></i>
+        </div>
+    </div>
+
+    <div class="section section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-12">
+                    <h2 class="title">Sobre mí</h2>
+                    <br />
+                    <p class="description">
+                        Me defino como un
+                        <b>apasionado de la tecnología</b>. Adoro investigar y
+                        <i>cacharrear</i> tanto con el software como con el hardware.
+                        <br>
+                        <br> Estoy especializado en la
+                        <b>arquitectura de computadores</b>. No obstante, me gustan otras áreas de conocimiento como la
+                        <b>computación ubicua</b>, el
+                        <b>diseño web</b> y el
+                        <b>desarrollo de aplicaciones móviles o distribuidas</b>.
+                        <br>
+                        <br> También tengo conocimientos de
+                        <b>
+                            <i>Big Data</i>
+                        </b>,
+                        <b>
+                            <i>Bussiness Inteligence</i>
+                        </b>,
+                        <b>inteligencia artificial</b>, legislación aplicada a datos y estándares de procesos de
+                        auditoría y
+                        certificación.
+                        <br>
+                        <br>
+                    </p>
+                </div>
+                <div class="col-lg-6 col-md-12 ml-auto mr-auto" style="background-image: url('./assets/img/Technology-Track.png'); 
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center; min-height: 300px;"></div>
+                <!-- <div class="col-lg-6 col-md-12 ml-auto mr-auto">
+                    <img style="max-height: 380px; max-width: 100%;" src="./assets/img/Technology-Track.png"
+                        class="img-no-padding img-responsive">
+                </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-color: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h2 class="title">Carrera Profesional</h2>
+                    <br />
+                    <div id="timeline">
+                        <!-- Timeline Item, copy from here to create various boxes -->
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content right">
+                                <h4>Full Stack Developer</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>The Reuse Company</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Marzo 2019 - Actualidad
+                                </div>
+                                <p>
+                                    Participación en multiples proyectos de I+D+i relacionados con el
+                                    <b>análisis semántico</b> del leguaje natural y
+                                    <b>detección de patrones</b>.
+                                    <i>Proyecto Narange, Proyecto Europeo Imola II, POC Acciona</i>, entre otros.
+                                </p>
+                                <p>
+                                    Liderazgo y participación en el diseño y desarrollo de los productos
+                                    <b>
+                                        <i>Skylability Platform</i>
+                                    </b> y
+                                    <b>
+                                        <i>Kwoledge Manager Online</i>
+                                    </b>.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content left">
+                                <h4>Técnico de Apoyo a la Investigación</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Universidad Carlos III de Madrid</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Marzo 2017 - Marzo 2019
+                                </div>
+                                <p>
+                                    Participación en diferentes proyectos de investigación relacionados con el
+                                    <b>procesamiento del leguaje natural</b>:
+                                </p>
+                                <ul style="font-size: 15px">
+                                    <li>
+                                        <b>Cátedra SMART-RTVE</b>, para el seguimiento de perfiles de personajes famosos
+                                        en
+                                        las redes sociales.
+                                    </li>
+                                    <li style="margin-top: 5px;">
+                                        <b>Social Media Radar I, II y III</b>, para la detección temprana de eventos a
+                                        través
+                                        de las redes sociales.
+                                    </li>
+                                    <li style="margin-top: 5px;">
+                                        <b>POC Orange</b>, para la clasificación automática de encuestas de satisfacción
+                                        de
+                                        usuarios.
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content right">
+                                <h4>Becario Cátedra SMART-RTVE</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Universidad Carlos III de Madrid</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Julio 2016 - Marzo 2017
+                                </div>
+                                <p>
+                                    Departamento de informática.
+                                    <b>Grupo Knowledge Reuse</b>. Becario colaborador en la cátedra
+                                    <b>SMART-RTVE</b> entre la Universidad Carlos III de Madrid y Radio Televisión
+                                    Española,
+                                    para la monitorización y seguimiento de perfiles de personajes famosos en las redes
+                                    sociales.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle">
+                                    <i class="fa fa-briefcase"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content left">
+                                <h4>Becario Programador</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>ISD Ibérica/Philips España</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Agosto 2014 - Octubre 2014
+                                </div>
+                                <p>
+                                    Participación en diferentes proyectos relacionados con la domótica arquitectural y
+                                    el alumbrado inteligente. Destaca el proyecto
+                                    para la
+                                    <b>
+                                        <i>Torre CEPSA</i>
+                                    </b>, consistiendo en la programación del entorno y dispositivos encargados de la
+                                    iluminación
+                                    exterior del edificio.
+                                </p>
+                                <p>
+                                    Otros proyectos insteresantes:
+                                    <i>BBVA Santa Bárbara</i>,
+                                    <i>Tribunal Constitucional</i>,
+                                    <i>Indra</i> y
+                                    <i>Bricodepot Gaia en Oporto (Portugal)</i> .
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 col-md-12 ml-auto mr-auto">
+                    <h2 class="title">Habilidades</h2>
+                    <br />
+                    <p>
+                        Capacidad para el desarrollo de
+                        <b>sistemas semánticos de análisis</b> basados en ontologías y
+                        <b>NLP</b> para la gestión de información extraída desde Facebook, Twitter, demás redes sociales
+                        y otros
+                        sistemas masivos de información.
+                    </p>
+                    <p>
+                        Experiencia en el desarrollo de
+                        <b>sistemas gráficos</b> basados web utilizando tecnologías como Angular.js, Node.js, Epress.js
+                        etc.,
+                        en sistemas de control de versiones como Github, Git y Tortoise SVN y en entornos de desarrollo
+                        como
+                        Eclipse y Visual Studio.
+                    </p>
+                    <p>
+                        Conocimientos para el desarrollo, gestión e implantación de
+                        <b>sistemas de análisis Big Data y Linked Data</b>.
+                    </p>
+                </div>
+                <div class="col-lg-4 col-md-12 ml-auto mr-auto" style="background-image: url('./assets/img/Skills.png'); 
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center; min-height: 300px;">
+                </div>
+            </div>
+            <div style="margin-top: 30px;" class="row">
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="net"></div>
+                    <h4 style="margin:0">.NET (C#/VB)</h4>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="android"></div>
+                    <h4 style="margin:0">Android</h4>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="aql"></div>
+                    <h4 style="margin:0">AQL</h4>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="html5"></div>
+                    <h4 style="margin:0">HTML5</h4>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="js"></div>
+                    <h4 style="margin:0">Javascript</h4>
+                </div>
+                <div class="col-lg-2 col-md-3 col-sm-6 ml-auto mr-auto text-center">
+                    <div class="row" id="css"></div>
+                    <h4 style="margin:0">CSS/SCSS</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section" style="background-color: #fafafa">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <h2 class="title">Educación</h2>
+                    <br />
+                    <div id="timeline">
+                        <!-- Timeline Item, copy from here to create various boxes -->
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle timeline-icon-circle-cap">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content right">
+                                <h4>PhD en Ciencia y Tecnología Informática</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Universidad Carlos III</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Marzo 2019 - Actualidad
+                                </div>
+                                <p>
+                                    Generación automática de ontologías mediante el procesamiento del lenguaje natural
+                                    a través de inteligencia artificial.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle timeline-icon-circle-cap">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content left">
+                                <h4>Máster en Ingeniería Informática</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Universidad Carlos III</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Septiembre 2015 - Marzo 2017
+                                </div>
+                                <p>
+                                    Auditoria y Certificación, Integración de sistemas, Computación Grafica, Diseño y
+                                    Evaluación de Arquitecturas de Computación,
+                                    Dirección de proyectos de I+D+i, Computación de Altas Prestaciones, Sistemas de
+                                    Apoyo
+                                    a la Toma de Decisiones.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle timeline-icon-circle-cap">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content right">
+                                <h4>Grado en Ingeniería Informática</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Universidad Carlos III</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Septiembre 2011 - Junio 2015
+                                </div>
+                                <p>
+                                    Mención en Ingeniería de Computadores: Teoría de Autómatas y Lenguajes Formales,
+                                    Ficheros y Bases de Datos, Criptografía
+                                    y Seguridad informática, Ingeniería Software, Redes de Ordenadores, Diseño de
+                                    Sistemas
+                                    Operativos, Computación Ubícua, Sistemas Distribuidos.
+                                </p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <!--Icon inside the circle-->
+                            <div class="timeline-icon">
+                                <!-- <span class="timeline-icon-circle"><i class="fa fa-graduation-cap"></i></span> -->
+                                <span class="timeline-icon-circle timeline-icon-circle-cap">
+                                    <i class="fa fa-graduation-cap"></i>
+                                </span>
+                            </div>
+                            <!-- Content from timeline box and position (right or left)-->
+                            <div class="timeline-content left">
+                                <h4>Bachillerato de Ciencias</h4>
+                                <h5 style="margin-top:10px;">
+                                    <b>
+                                        <i>Colegio Mater Purissima</i>
+                                    </b>
+                                </h5>
+                                <div style="font-size: 16px; margin-bottom: 10px;">
+                                    Septiembre 2009 - Junio 2011
+                                </div>
+                                <p>
+                                    Bachillerato de Ciencias Tecnológicas: Tecnología, Física, Química y Dibujo Técnico.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-dark text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 mr-auto ml-auto">
+                    <h2 class="title">Media</h2>
+                    <h5 class="description">T3CHFEST 2017: Una charla en la que repasamos como es posible influenciar a
+                        la población
+                        mediante la monitorización de individuos famosos y la interacción entre ellos realizando Big
+                        Data sobre
+                        las redes sociales. Esta charla se enmarca dentro de una cátedra de investigación entre la UC3M
+                        y RTVE.</h5>
+                    <br>
+                    <br>
+                    <iframe style="max-width:100%; border: 0px;" width="640" height="360"
+                        src="https://www.youtube.com/embed/GQrW0mWFPTg">
+                    </iframe>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 mr-auto ml-auto">
+                    <h2 class="title">Aficiones</h2>
+                    <h5 class="description">A parte de programar, en mi tiempo libre:</h5>
+                    <br>
+                </div>
+            </div>
+            <br>
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <fa-icon [icon]="video"></fa-icon>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Cine y Series</h4>
+                            <p class="description">De todo tipo, desde las pelis palomiteras de acción, a las comedias
+                                románticas. Pero sobre todo,
+                                me gustan las de suspense e intriga.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <fa-icon [icon]="futbol"></fa-icon>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Deportes</h4>
+                            <p class="description">Juego semanalmente a futbol sala con Los de Siempre, el equipo de los
+                                amigos de toda la vida.
+                                También practico otros deportes como tenis, baloncesto y ping pong</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <fa-icon [icon]="gamepad"></fa-icon>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Videjuegos</h4>
+                            <p class="description">Principalmente los de un jugador con una buena historia que
+                                disfrutar como Uncharted o God of War. También me gusta jugar
+                                a Fifa con los amigos.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-3">
+                    <div class="info">
+                        <div class="icon icon-danger">
+                            <!-- <i class="fa fa-drafting-compass"></i> -->
+                            <fa-icon [icon]="draftingCompass"></fa-icon>
+                        </div>
+                        <div class="description">
+                            <h4 class="info-title">Diseño</h4>
+                            <p class="description">Me gusta diseñar marcas, iconos, logos e imágenes corporativas.
+                                También modificar
+                                imágenes con photoshop para
+                                sacarles su máximo potencial.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section section-dark">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-4">
+                    <h2 class="title">Contacto</h2>
+                    <table style="color:rgba(255, 255, 255, 0.7);margin-bottom: 20px;">
+                        <tr style="margin-bottom: 10px;">
+                            <td style="min-width: 35px; text-align: center;padding: 5px;">
+                                <fa-icon [icon]="user"></fa-icon>
+                            </td>
+                            <td>Miguel Ángel Rozalen Soriano</td>
+                        </tr>
+                        <tr style="margin-bottom: 10px;">
+                            <td style="min-width: 35px; text-align: center;padding: 5px;">
+                                <fa-icon [icon]="map"></fa-icon>
+                            </td>
+                            <td> Calle Dodge Número 3, <br>
+                                28041 Madrid (España)</td>
+                        </tr>
+                        <tr style="margin-bottom: 10px;">
+                            <td style="min-width: 35px; text-align: center;padding: 5px;">
+                                <fa-icon [icon]="mobile"></fa-icon>
+                            </td>
+                            <td>(+34) 664 14 27 24</td>
+                        </tr>
+                        <tr style="margin-bottom: 10px;">
+                            <td style="min-width: 35px; text-align: center;padding: 5px;">
+                                <fa-icon [icon]="envelope"></fa-icon>
+                            </td>
+                            <td>mikelangel1993@gmail.com</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="col-lg-8 col-md-8 ml-auto mr-auto">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5112.588842468583!2d-3.712659563427481!3d40.36533336859415!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422704387682fd%3A0x77c825671153af89!2sCalle+Dodge%2C+28041+Madrid!5e0!3m2!1ses!2ses!4v1555582132931!5m2!1ses!2ses"
+                        width="100%" height="350" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
