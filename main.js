@@ -340,11 +340,18 @@ var ProfileComponent = /** @class */ (function () {
         this.mobile = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faMobile"];
         this.envelope = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faEnvelope"];
         this.URL = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US";
+        this.COMPLETE_URL = "https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US";
         this.IMG = this._sanitizer.bypassSecurityTrustStyle("url('./assets/img/madrid.jpg')");
         this.http.get(this.URL).subscribe(function (res) {
             console.log(res.images);
             _this.IMG = _this._sanitizer.bypassSecurityTrustStyle("url('" + ("https://www.bing.com/" + res.images[0].url) + "')");
             _this.isBingWallpaper = true;
+        }, function (error) {
+            _this.http.get(_this.COMPLETE_URL).subscribe(function (res) {
+                console.log(res.images);
+                _this.IMG = _this._sanitizer.bypassSecurityTrustStyle("url('" + ("https://www.bing.com/" + res.images[0].url) + "')");
+                _this.isBingWallpaper = true;
+            });
         });
     }
     ProfileComponent.prototype.ngOnInit = function () {
