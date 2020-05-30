@@ -1,10 +1,10 @@
-import { Component, OnInit } from '@angular/core';
-import { DomSanitizer, SafeStyle } from '@angular/platform-browser';
-import { faDraftingCompass, faVideo, faFutbol, faGamepad, faUserTie, faMapMarkerAlt, faMobile, faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons';
-import { HttpClient, HttpErrorResponse } from '@angular/common/http';
-import { throwError } from 'rxjs';
+import { Component, OnInit } from '@angular/core'
+import { DomSanitizer, SafeStyle } from '@angular/platform-browser'
+import { faDraftingCompass, faVideo, faFutbol, faGamepad, faUserTie, faMapMarkerAlt, faMobile, faEnvelope, IconDefinition } from '@fortawesome/free-solid-svg-icons'
+import { HttpClient, HttpErrorResponse } from '@angular/common/http'
+import { throwError } from 'rxjs'
 
-const Highcharts = require('highcharts');
+const Highcharts = require('highcharts')
 
 @Component({
     selector: 'app-profile',
@@ -13,26 +13,33 @@ const Highcharts = require('highcharts');
 })
 
 export class ProfileComponent implements OnInit {
-        
-    draftingCompass:IconDefinition = faDraftingCompass
-    video:IconDefinition = faVideo
-    futbol:IconDefinition = faFutbol
-    gamepad:IconDefinition = faGamepad
-    user:IconDefinition = faUserTie
-    map:IconDefinition = faMapMarkerAlt
-    mobile:IconDefinition = faMobile
-    envelope:IconDefinition = faEnvelope
-    //URL:string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
-    URL:string = "https://cors.io/?https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
-    IMG:SafeStyle; 
-    isBingWallpaper:boolean
-    constructor(private _sanitizer: DomSanitizer, private http:HttpClient) {
-        this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('./assets/img/madrid.jpg')`);
-        this.http.get(this.URL).subscribe((res:any) => {
-            //console.log(res.images)
-            this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('${"https://www.bing.com/"+res.images[0].url}')`);
-            this.isBingWallpaper = true;
-        });
+
+    draftingCompass: IconDefinition = faDraftingCompass
+    video: IconDefinition = faVideo
+    futbol: IconDefinition = faFutbol
+    gamepad: IconDefinition = faGamepad
+    user: IconDefinition = faUserTie
+    map: IconDefinition = faMapMarkerAlt
+    mobile: IconDefinition = faMobile
+    envelope: IconDefinition = faEnvelope
+    //URL: string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US?callback=foo"
+    //URL:string = "https://cors.io/?https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+    URL:string = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bing.com%2FHPImageArchive.aspx%3Fformat%3Drss%26idx%3D0%26n%3D1%26mkt%3Den-US'
+    IMG: SafeStyle
+    isBingWallpaper: boolean
+
+    constructor(private _sanitizer: DomSanitizer, private http: HttpClient) {
+        this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('./assets/img/madrid.jpg')`)
+        this.http.get(this.URL).subscribe((res:any)=>{
+            //console.log(res.items[0].thumbnail)
+            this.IMG = this._sanitizer.bypassSecurityTrustStyle("url('"+res.items[0].thumbnail+"')")
+            this.isBingWallpaper = true
+        })
+        // this.http.get(this.URL).subscribe((res:any) => {
+        //     //console.log(res.images)
+        //     this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('${"https://www.bing.com/"+res.images[0].url}')`)
+        //     this.isBingWallpaper = true
+        // })
     }
 
     ngOnInit() {
@@ -66,7 +73,7 @@ export class ProfileComponent implements OnInit {
 
             ]
         }]
-        Highcharts.chart('net', optionsNet);
+        Highcharts.chart('net', optionsNet)
 
         optionsAndroid.series = [{
             type: 'pie',
@@ -90,7 +97,7 @@ export class ProfileComponent implements OnInit {
                 }
             ]
         }]
-        Highcharts.chart('android', optionsAndroid);
+        Highcharts.chart('android', optionsAndroid)
 
         optionsAql.series = [{
             type: 'pie',
@@ -113,7 +120,7 @@ export class ProfileComponent implements OnInit {
                 }
             ]
         }]
-        Highcharts.chart('aql', optionsAql);
+        Highcharts.chart('aql', optionsAql)
 
         optionsHtml5.series = [{
             type: 'pie',
@@ -139,7 +146,7 @@ export class ProfileComponent implements OnInit {
 
             ]
         }]
-        Highcharts.chart('html5', optionsHtml5);
+        Highcharts.chart('html5', optionsHtml5)
 
         optionsJs.series = [{
             type: 'pie',
@@ -163,7 +170,7 @@ export class ProfileComponent implements OnInit {
             }
             ]
         }]
-        Highcharts.chart('js', optionsJs);
+        Highcharts.chart('js', optionsJs)
 
         optionsCss.series = [{
             type: 'pie',
@@ -188,26 +195,27 @@ export class ProfileComponent implements OnInit {
             }
             ]
         }]
-        Highcharts.chart('css', optionsCss);
+        Highcharts.chart('css', optionsCss)
     }
 
     handleError(error: HttpErrorResponse) {
-		if (error.error instanceof ErrorEvent) {
-			// A client-side or network error occurred. Handle it accordingly.
-			console.error('An error occurred:', error.error.message);
-		} else {
-			// The backend returned an unsuccessful response code.
-			// The response body may contain clues as to what went wrong,
-			console.error(`Backend returned code ${error.status}, body was: ${error.error}`);
-		}
-		// return an ErrorObservable with a user-facing error message
-		console.error('Something bad happened; please try again later.');
-		return throwError(error);
-	};
+        if (error.error instanceof ErrorEvent) {
+            // A client-side or network error occurred. Handle it accordingly.
+            console.error('An error occurred:', error.error.message)
+        } else {
+            // The backend returned an unsuccessful response code.
+            // The response body may contain clues as to what went wrong,
+            console.error(`Backend returned code ${error.status}, body was: ${error.error}`)
+        }
+        // return an ErrorObservable with a user-facing error message
+        console.error('Something bad happened please try again later.')
+        return throwError(error)
+    }
 }
 
+
 export function CopyObject(objectToCopy: any) {
-    return JSON.parse(JSON.stringify(objectToCopy));
+    return JSON.parse(JSON.stringify(objectToCopy))
 }
 
 export var HighChartsOptionsCircle = {
