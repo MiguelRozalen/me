@@ -211,6 +211,7 @@ var AppModule = /** @class */ (function () {
                 _app_routing__WEBPACK_IMPORTED_MODULE_6__["AppRoutingModule"],
                 _fortawesome_angular_fontawesome__WEBPACK_IMPORTED_MODULE_4__["FontAwesomeModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientModule"],
+                _angular_common_http__WEBPACK_IMPORTED_MODULE_11__["HttpClientJsonpModule"]
             ],
             providers: [],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_7__["AppComponent"]]
@@ -339,14 +340,20 @@ var ProfileComponent = /** @class */ (function () {
         this.map = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faMapMarkerAlt"];
         this.mobile = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faMobile"];
         this.envelope = _fortawesome_free_solid_svg_icons__WEBPACK_IMPORTED_MODULE_2__["faEnvelope"];
-        //URL:string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
-        this.URL = "https://cors.io/?https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US";
+        //URL: string = "/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US?callback=foo"
+        //URL:string = "https://cors.io/?https://www.bing.com/HPImageArchive.aspx?format=js&idx=0&n=1&mkt=en-US"
+        this.URL = 'https://api.rss2json.com/v1/api.json?rss_url=https%3A%2F%2Fwww.bing.com%2FHPImageArchive.aspx%3Fformat%3Drss%26idx%3D0%26n%3D1%26mkt%3Den-US';
         this.IMG = this._sanitizer.bypassSecurityTrustStyle("url('./assets/img/madrid.jpg')");
         this.http.get(this.URL).subscribe(function (res) {
-            //console.log(res.images)
-            _this.IMG = _this._sanitizer.bypassSecurityTrustStyle("url('" + ("https://www.bing.com/" + res.images[0].url) + "')");
+            //console.log(res.items[0].thumbnail)
+            _this.IMG = _this._sanitizer.bypassSecurityTrustStyle("url('" + res.items[0].thumbnail + "')");
             _this.isBingWallpaper = true;
         });
+        // this.http.get(this.URL).subscribe((res:any) => {
+        //     //console.log(res.images)
+        //     this.IMG = this._sanitizer.bypassSecurityTrustStyle(`url('${"https://www.bing.com/"+res.images[0].url}')`)
+        //     this.isBingWallpaper = true
+        // })
     }
     ProfileComponent.prototype.ngOnInit = function () {
         var optionsNet = CopyObject(HighChartsOptionsCircle);
@@ -506,10 +513,9 @@ var ProfileComponent = /** @class */ (function () {
             console.error("Backend returned code " + error.status + ", body was: " + error.error);
         }
         // return an ErrorObservable with a user-facing error message
-        console.error('Something bad happened; please try again later.');
+        console.error('Something bad happened please try again later.');
         return Object(rxjs__WEBPACK_IMPORTED_MODULE_4__["throwError"])(error);
     };
-    ;
     ProfileComponent = __decorate([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_0__["Component"])({
             selector: 'app-profile',
