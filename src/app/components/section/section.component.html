@@ -1,0 +1,9 @@
+<div style="margin: 40px 60px">
+  <div class="title">
+    {{ section?.title | uppercase }}
+  </div>
+  <app-sub-section
+    *ngFor="let subsection of section?.subsections"
+    [subsection]="subsection"
+  ></app-sub-section>
+</div>

@@ -1,0 +1,124 @@
+[
+    {
+        "info": {
+            "name": "Miguel Á. Rozalén",
+            "jobTitle": "Senior Full Stack Developer",
+            "email": "mikelangel1993@gmail.com",
+            "location": "Getafe, Madrid (Spain)",
+            "phoneNumber": "+34 664 14 27 24",
+            "img": "/assets/img/me.jpg"
+        },
+        "rightSections": [
+            {
+                "title": "Sección 1",
+                "subsections": [
+                    {
+                        "title": "Subsección 1",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Descripción de la subsección 1",
+                        "dates": "",
+                        "location": "",
+                        "icon": "star_half"
+                    },
+                    {
+                        "title": "Subsección 2",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Descripción de la subsección 2",
+                        "dates": "",
+                        "location": "",
+                        "icon": "star_half"
+                    }
+                ]
+            },
+            {
+                "title": "Sección 1",
+                "subsections": [
+                    {
+                        "title": "Subsección 1",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Descripción de la subsección 1",
+                        "dates": "",
+                        "location": "",
+                        "icon": "star_half"
+                    },
+                    {
+                        "title": "Subsección 2",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Descripción de la subsección 2",
+                        "dates": "",
+                        "location": "",
+                        "icon": "star_half"
+                    }
+                ]
+            }
+        ],
+        "leftSections": [
+            {
+                "title": "SUMMARY",
+                "subsections": [
+                    {
+                        "title": "",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
+                        "dates": "",
+                        "location": "",
+                        "icon": ""
+                    }
+                ]
+            },
+            {
+                "title": "Experience",
+                "subsections": [
+                    {
+                        "title": "Senior Full Stack Developer",
+                        "subtitle": "",
+                        "job": "The REUSE Company",
+                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
+                        "dates": "ENE 21 - FEB 24",
+                        "location": "Leganés, Madrid (Spain)",
+                        "icon": ""
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "info": null,
+        "rightSections": null,
+        "leftSections": [
+            {
+                "title": "SUMMARY",
+                "subsections": [
+                    {
+                        "title": "",
+                        "subtitle": "",
+                        "job": "",
+                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
+                        "dates": "",
+                        "location": "",
+                        "icon": ""
+                    }
+                ]
+            },
+            {
+                "title": "Experience",
+                "subsections": [
+                    {
+                        "title": "Senior Full Stack Developer",
+                        "subtitle": "",
+                        "job": "The REUSE Company",
+                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
+                        "dates": "ENE 21 - FEB 24",
+                        "location": "Leganés, Madrid (Spain)",
+                        "icon": ""
+                    }
+                ]
+            }
+        ]
+    }
+]

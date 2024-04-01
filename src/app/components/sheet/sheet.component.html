@@ -1,0 +1,67 @@
+<!-- Contenedor principal con display flex para organizar elementos en línea -->
+<div style="display: flex">
+  <!-- Div que representa una "hoja" o sección de la página -->
+  <div class="sheet">
+    <!-- Div para el renderizado de contenido -->
+    <div class="renderer">
+      <!-- Contenedor principal del contenido -->
+      <div class="container">
+        <!-- Otro contenedor con display flex para organizar elementos en línea -->
+        <div style="display: flex">
+          <!-- Div izquierdo, posiblemente para otro propósito -->
+          <div class="left">
+            <!-- Contenedor principal con padding de 60px -->
+            <div *ngIf="sheet?.info" class="info">
+              <!-- Nombre -->
+              <div class="name">{{ sheet?.info?.name }}</div>
+              <!-- Título del trabajo -->
+              <div class="job-title">{{ sheet?.info?.jobTitle }}</div>
+
+              <!-- Información de contacto -->
+              <div class="contact-info">
+                <!-- Icono de correo electrónico -->
+                <span class="material-symbols-outlined">alternate_email</span>
+                <!-- Correo electrónico -->
+                <div>{{ sheet?.info?.email }}</div>
+
+                <!-- Icono de ubicación -->
+                <span class="material-symbols-outlined">location_on</span>
+                <!-- Ubicación -->
+                <div>{{ sheet?.info?.location }}</div>
+
+                <!-- Icono de teléfono -->
+                <span class="material-symbols-outlined">call</span>
+                <!-- Número de teléfono -->
+                <div>{{ sheet?.info?.phoneNumber }}</div>
+              </div>
+            </div>
+
+            <div *ngIf="!sheet?.info" style="margin-top: 60px"></div>
+
+            <app-section
+              *ngFor="let section of sheet?.leftSections"
+              [section]="section"
+            ></app-section>
+          </div>
+
+          <!-- Div derecho, posiblemente para mostrar contenido principal -->
+          <div *ngIf="sheet?.info" class="right">
+            <!-- Div para mostrar una foto, posiblemente del usuario -->
+            <div
+              class="photo"
+              [style.backgroundImage]="'url(' + sheet?.info?.img + ')'"
+            ></div>
+
+            <!-- Componente de Angular para renderizar secciones a la derecha,
+                   utiliza un bucle *ngFor para iterar sobre el arreglo rightSections
+                   y mostrar cada sección usando el componente app-rigth-section -->
+            <app-right-section
+              *ngFor="let section of sheet?.rightSections"
+              [section]="section"
+            ></app-right-section>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
