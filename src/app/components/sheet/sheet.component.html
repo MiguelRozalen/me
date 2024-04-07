@@ -13,7 +13,19 @@
             <!-- Contenedor principal con padding de 60px -->
             <div *ngIf="sheet?.info" class="info">
               <!-- Nombre -->
-              <div class="name">{{ sheet?.info?.name }}</div>
+              <div class="name" style="display: flex; align-items: center">
+                {{ sheet?.info?.name }}
+                @if(this.sheet?.info?.linkedin){
+                <img
+                  style="margin-left: 10px; cursor: pointer"
+                  height="30px"
+                  src="assets/img/LinkedIn_icon.svg"
+                  alt=""
+                  (click)="openLink()"
+                />
+                }
+              </div>
+
               <!-- Título del trabajo -->
               <div class="job-title">{{ sheet?.info?.jobTitle }}</div>
 

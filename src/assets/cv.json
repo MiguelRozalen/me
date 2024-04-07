@@ -6,82 +6,118 @@
             "email": "mikelangel1993@gmail.com",
             "location": "Getafe, Madrid (Spain)",
             "phoneNumber": "+34 664 14 27 24",
-            "img": "/assets/img/me.jpg"
+            "img": "/assets/img/me.jpg",
+            "linkedin": "https://www.linkedin.com/in/miguel-rozalen/"
         },
         "rightSections": [
             {
-                "title": "Sección 1",
+                "title": "Fortalezas",
                 "subsections": [
                     {
-                        "title": "Subsección 1",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Descripción de la subsección 1",
-                        "dates": "",
-                        "location": "",
+                        "title": "Liderazgo",
+                        "description": "Gestión y planificación existosa de equipos multidisciplinares de 3 a 5 personas.",
                         "icon": "star_half"
                     },
                     {
-                        "title": "Subsección 2",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Descripción de la subsección 2",
-                        "dates": "",
-                        "location": "",
-                        "icon": "star_half"
+                        "title": "Resolución de Problemas",
+                        "description": "Capacidad de pensar fuera de la caja y encontrar soluciones alternativas e innovadoras centradas en la optimización de porcesos.",
+                        "icon": "cognition"
+                    },
+                    {
+                        "title": "Multidisciplinaridad",
+                        "description": "Colaboración y coordinación de perfiles con diferentes roles y background teconológico.",
+                        "icon": "diversity_4"
+                    },
+                    {
+                        "title": "Comunicación",
+                        "description": "Habilidad para expresarse y divulgar información de manera efectiva.",
+                        "icon": "brand_awareness"
                     }
                 ]
             },
             {
-                "title": "Sección 1",
+                "title": "Habilidades",
                 "subsections": [
                     {
-                        "title": "Subsección 1",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Descripción de la subsección 1",
-                        "dates": "",
-                        "location": "",
-                        "icon": "star_half"
+                        "description": "Angular · .NET · Node · SQL · Git · Python · Java · Elasticsearch · ASP.NET · MongoDB · Azure · Gitlab · Apache Tomcat · Power Automate · ArangoDB · Google Cloud · SPRING · AngularJS · PL/I · SVN · XAML"
+                    }
+                ]
+            },
+            {
+                "title": "Idiomas",
+                "subsections": [
+                    {
+                        "title": "Español - Lengua Materna"
                     },
                     {
-                        "title": "Subsección 2",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Descripción de la subsección 2",
-                        "dates": "",
-                        "location": "",
-                        "icon": "star_half"
+                        "title": "Inglés - C1"
+                    }
+                ]
+            },
+            {
+                "title": "Logros",
+                "subsections": [
+                    {
+                        "title": "IMOLA IV",
+                        "description": "Planificación y desarrollo del proyecto europeo IMOLA IV.",
+                        "icon": "flag"
+                    },
+                    {
+                        "title": "RTVE Play",
+                        "description": "Planificación y desarrollo del buscador semántico de RTVE Play.",
+                        "icon": "slow_motion_video"
+                    },
+                    {
+                        "title": "T3CHFEST 2017 (V Edición)",
+                        "description": "Manipulando las redes sociales a voluntad.",
+                        "icon": "podium"
+                    },
+                    {
+                        "title": "Torre CEPSA",
+                        "description": "Programación del sistema de iluminación exterior domotizada.",
+                        "icon": "lightbulb"
                     }
                 ]
             }
         ],
         "leftSections": [
             {
-                "title": "SUMMARY",
+                "title": "Resumen",
                 "subsections": [
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
-                        "dates": "",
-                        "location": "",
-                        "icon": ""
+                        "description": "Soy un apasionado de la tecnología. Me encanta investigar y cacharrear tanto con el software como con el hardware. Estoy especializado en la arquitectura de computadores. No obstante, me gustan otras áreas de conocimiento como la computación ubicua, el diseño web y el desarrollo de aplicaciones móviles o distribuidas. También tengo conocimientos de Big Data, Bussiness Inteligence, inteligencia artificial, legislación aplicada a datos y estándares de procesos de auditoría y certificación."
                     }
                 ]
             },
             {
-                "title": "Experience",
+                "title": "Experiencia",
                 "subsections": [
                     {
+                        "title": "Technical Solution PRO",
+                        "job": "CaixaBank Tech",
+                        "description": "Participación en el proyecto de transformación de PL/I a Java en entornos IBM Mainframe utilizando IA Generativa dentro del Departamento de Innovación Interna. Definicion del plan de innovación anual, radar tecnológico y buzón de ideas.",
+                        "dates": "FEB 24 - Actualmente",
+                        "location": "Las Rozas, Madrid (España)",
+                        "tech": "PL/I, Python, Azure, Google Cloud, Power Automate, Gitlab.",
+                        "sector": "Ingeniería Informática, Investigación, Innovación, Banca, Inteligencia Artificial."
+                    },
+                    {
                         "title": "Senior Full Stack Developer",
-                        "subtitle": "",
                         "job": "The REUSE Company",
-                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
-                        "dates": "ENE 21 - FEB 24",
+                        "description": "Participación en el proyecto europeo IMOLA IV, para la creación y construcción de un sistema online de gestión de ontologías aplicado al registro de la propiedad europeo. Participación en el proyecto europeo FCAS, para el desarrollo del nuevo sistema de combate aéreo de la unión europea. Gestión del proyecto y desarrollo del sistema semántico de búsqueda para la plataforma de RTVE de visualización de contenido bajo demanda: RTVE Play. Migración del stack tecnológico de TRC a .Net Core. Product Owner del producto KMO. Product Owner del software de uso interno Doorway. Centralizacion, diseño y actualización de los iconos de las herramientas de la compañía.",
+                        "dates": "MAR 22 - FEB 24",
                         "location": "Leganés, Madrid (Spain)",
-                        "icon": ""
+                        "tech": "Angular, .NET, .NETCore, Node, Elasticsearch, ASP.NET, SQL, XAML, SVN, Git.",
+                        "sector": "Ingeniería Informática, Multimedia, Defensa, Procesamiento del Lenguaje Natural."
+                    },
+                    {
+                        "title": "Full Stack Developer",
+                        "job": "The REUSE Company",
+                        "description": "Participación en múltiples proyectos de I+D+i relacionados con el análisis semántico del leguaje natural y detección de patrones. Proyecto Buscador semántico de recetas de cocina RTVE. Proyecto Narange (en colaboración con la operadora de telefonía Orange España), para la clasificación automática de encuestas de satisfacción de usuarios en distintos agrupadores mediante el análisis del lenguaje natural. Proyectos Europeos IMOLAII e IMOLAIII, para la visualización de tesauros a través de una aplicación web y para la construcción de un sistema online de gestión de ontologías. POC Acciona, para la visualización de ontologías a través de una aplicación web. Liderazgo y participación en los productos: Skylability Platform (framework de escalabilidad para la ejecución distribuida de tareas computacionalmente pesadas) y Knowledge Manager Online (visualizador web de ontologías). Diseño y desarrollo del software Doorway, sistema de fichajes interno de la compañía.",
+                        "dates": "MAR 19 - MAR 22",
+                        "location": "Leganés, Madrid (Spain)",
+                        "tech": "Angular, .NET, Node, Elasticsearch, ASP.NET, SQL, XAML, SVN, Git.",
+                        "sector": "Ingeniería Informática, Multimedia, Análisis del lenguaje natural."
                     }
                 ]
             }
@@ -92,30 +128,67 @@
         "rightSections": null,
         "leftSections": [
             {
-                "title": "SUMMARY",
+                "title": "Experiencia",
                 "subsections": [
                     {
-                        "title": "",
-                        "subtitle": "",
-                        "job": "",
-                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
-                        "dates": "",
-                        "location": "",
-                        "icon": ""
+                        "title": "Técnico de Apoyo a la Investigación",
+                        "job": "Universidad Carlos III de Madrid (EPS)",
+                        "description": "Participación en diferentes proyectos de investigación relacionados con el análisis semántico del leguaje natural y detección de patrones. Cátedra SMART-RTVE, para la monitorización y seguimiento de perfiles de personajes famosos en las redes sociales. Proyecto Social Media Radar, para la detección temprana de eventos (como accidentes de tráfico en zonas rurales) a través de las redes sociales. POC Orange, para la clasificación automática de encuestas de satisfacción de usuarios en distintos agrupadores mediante el análisis del lenguaje natural.",
+                        "dates": "MAR 17 - MAR 19",
+                        "location": "Leganés, Madrid (Spain)",
+                        "tech": "Angular, .NET, Node, ArangoDB, MongoDB, ASP.NET, SQL, Git.",
+                        "sector": "Ingeniería Informática, Análisis del lenguaje natural, Big Data."
+                    },
+                    {
+                        "title": "Becario Cátedra SMART-RTVE",
+                        "job": "Universidad Carlos III de Madrid (EPS)",
+                        "description": "Departamento de informática. Grupo Knowledge Reuse. Becario colaborador en el proyecto SMART-RTVE en colaboración con Radio Televisión Española.",
+                        "dates": "MAR 17 - MAR 19",
+                        "location": "Leganés, Madrid (Spain)",
+                        "tech": "AngularJS, JAVA, SPRING, Apache Tomcat, ArangoDB, MongoDB, Git.",
+                        "sector": "Ingeniería Informática, Análisis del lenguaje natural, Big Data."
+                    },
+                    {
+                        "title": "Becario Programador",
+                        "job": "ISD Ibérica/PHILIPS",
+                        "description": "Participación en diferentes proyectos relacionados con la domótica arquitectural y el alumbrado inteligente. Proyecto Torre CEPSA, programación del entorno y dispositivos encargados de la iluminación exterior del edificio. Proyecto BBVA Santa Bárbara, programación de un sistema inteligente de alumbrado interior. Proyecto Tribunal Constitucional, programación de un sistema inteligente de alumbrado interior. Proyecto Indra, programación de un sistema inteligente de alumbrado interior. Proyecto Bricodepot Gaia (Oporto - Portugal), programación de un sistema inteligente de alumbrado interior.",
+                        "dates": "AGO 14 - OCT 14",
+                        "location": "Las Tablas, Madrid (Spain)",
+                        "tech": "Dynalite, DALI, Ensamblador, Linux.",
+                        "sector": "Electricidad, Domótica, Electrónica, Iluminación, Telecomunicaciones."
                     }
                 ]
             },
             {
-                "title": "Experience",
+                "title": "Educación y Formación",
                 "subsections": [
                     {
-                        "title": "Senior Full Stack Developer",
-                        "subtitle": "",
-                        "job": "The REUSE Company",
-                        "description": "Experienced Angular Developer with 5+ years of experience and a degree in Computer Science. Expert in Angular with experience in versions above Angular 5. Skilled in Node.js, HTML, CSS, and Agile methodologies.",
-                        "dates": "ENE 21 - FEB 24",
-                        "location": "Leganés, Madrid (Spain)",
-                        "icon": ""
+                        "title": "Doctorado en Ciencia y Tecnología Informática (en pausa)",
+                        "job": "Universidad Carlos III de Madrid (EPS)",
+                        "description": "Generación automática de ontologías mediante el procesamiento del lenguaje natural a través de inteligencia artificial.",
+                        "dates": "MAR 19 - Actualmente",
+                        "location": "Leganés, Madrid (Spain)"
+                    },
+                    {
+                        "title": "Máster en Ingeniería Informática",
+                        "job": "Universidad Carlos III de Madrid (EPS)",
+                        "description": "Auditoria y Certificación, Integración de sistemas, Computación Grafica, Diseño y Evaluación de Arquitecturas de Computación, Dirección de proyectos de I+D+i, Computación de Altas Prestaciones, Sistemas de Apoyo a la Toma de Decisiones.",
+                        "dates": "SEP 15 - MAR 17",
+                        "location": "Leganés, Madrid (Spain)"
+                    },
+                    {
+                        "title": "Grado en Ingeniería Informática (Mención en Ingeniería de Computadores)",
+                        "job": "Universidad Carlos III de Madrid (EPS)",
+                        "description": "Teoría de Autómatas y Lenguajes Formales, Ficheros y Bases de Datos, Criptografía y Seguridad informática, Ingeniería Software, Redes de Ordenadores, Diseño de Sistemas Operativos, Computación Ubicua, Sistemas Distribuidos.",
+                        "dates": "SEP 11 - JUN 15",
+                        "location": "Leganés, Madrid (Spain)"
+                    },
+                    {
+                        "title": "Bachillerato en Ciencias Tecnológicas",
+                        "job": "Colegio Mater Purissima",
+                        "description": "Tecnología, Física, Química y Dibujo Técnico.",
+                        "dates": "SEP 09 - JUN 11",
+                        "location": "Madrid (Spain)"
                     }
                 ]
             }

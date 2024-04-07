@@ -13,4 +13,10 @@ import { RightSectionComponent } from '../right-section/right-section.component'
 })
 export class SheetComponent {
   @Input('sheet') sheet:Sheet |undefined = undefined;
+
+  openLink() {
+    if(this.sheet?.info?.linkedin){
+      window.open(this.sheet?.info?.linkedin, '_blank');
+    }
+  }
 }

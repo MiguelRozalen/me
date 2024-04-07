@@ -1,12 +1,24 @@
 <div style="display: flex; align-items: center">
-    <div>
-      <span class="material-symbols-outlined">
-        {{ subsection?.icon }}
-      </span>
-    </div>
-  
-    <div class="subtitle">{{ subsection?.title }}</div>
+  @if( subsection?.icon){
+  <div style="height: 21px">
+    <span style="font-size: 20px" class="material-symbols-outlined">
+      {{ subsection?.icon }}
+    </span>
   </div>
-  
-  <div class="description">{{ subsection?.description }}</div>
-  
+  } @if(subsection?.title){
+  <div
+    [style.marginLeft]="subsection?.icon ? '8px' : '0px'"
+    [style.marginBottom]="subsection?.icon ? '0px' : '10px'"
+    [style.fontSize]="subsection?.icon ? '18px' : '15px'"
+    class="subtitle"
+  >
+    {{ subsection?.title }}
+  </div>
+  }
+</div>
+
+@if(subsection?.description){
+<div [style.marginLeft]="subsection?.icon ? '28px' : '0px'" class="description">
+  {{ subsection?.description }}
+</div>
+}

@@ -6,6 +6,8 @@ export class Subsection {
   job: string; // Trabajo
   dates: string; // Fechas
   location: string; // Ubicación
+  tech: string;
+  sector: string;
 
   constructor(
     title: string,
@@ -14,7 +16,9 @@ export class Subsection {
     description: string,
     dates: string,
     location: string,
-    icon: string
+    icon: string,
+    tech: string,
+    sector: string
   ) {
     this.title = title;
     this.subtitle = subtitle;
@@ -23,6 +27,8 @@ export class Subsection {
     this.dates = dates;
     this.location = location;
     this.icon = icon;
+    this.tech = tech;
+    this.sector = sector;
   }
 }
 
@@ -47,6 +53,7 @@ export class Info {
   location: string;
   phoneNumber: string;
   img: string;
+  linkedin: string;
 
   constructor(
     name: string,
@@ -54,7 +61,8 @@ export class Info {
     email: string,
     location: string,
     phoneNumber: string,
-    img: string
+    img: string,
+    linkedin: string
   ) {
     this.name = name;
     this.jobTitle = jobTitle;
@@ -62,6 +70,7 @@ export class Info {
     this.location = location;
     this.phoneNumber = phoneNumber;
     this.img = img;
+    this.linkedin = linkedin;
   }
 }
 
