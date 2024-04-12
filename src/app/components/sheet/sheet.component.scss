@@ -12,7 +12,7 @@ $height: 1330px;
   margin-top: 60px;
   background-color: white;
   background-size: cover;
-  background-image: url(assets/img/cover.png);
+  background-image: url(./../../../assets/img/cover.png);
 }
 
 .renderer {
@@ -58,7 +58,7 @@ $height: 1330px;
   border-radius: 3px;
   height: 150px;
   width: 150px;
-  background-image: url(assets/img/me.jpg);
+  background-image: url(./../../../assets/img/me.jpg);
   background-size: cover;
   margin-top: 50px;
   margin-left: auto;
