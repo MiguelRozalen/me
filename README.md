@@ -22,6 +22,14 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
 
+## Publish Github Pages
+
+1. First, run `npm install -g angular-cli-ghpages`. This will install SPA Github Pages software.
+
+2. Then, run `ng build --base-href "/me/"`. This will compile the SPA and generate dist folder. In that folder you can find 'index.html' file with js and css refs.
+
+3. Finally, run `ngh --message="<message>"`. This will publish the page on Github.
+
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
