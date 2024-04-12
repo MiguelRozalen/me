@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
 import { SheetComponent } from './components/sheet/sheet.component';
-import { Info, Section, Sheet, Subsection } from './app.utils';
+import { Sheet } from './app.utils';
 import { CommonModule } from '@angular/common';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
 
