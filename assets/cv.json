@@ -20,12 +20,12 @@
                     },
                     {
                         "title": "Resolución de Problemas",
-                        "description": "Capacidad de pensar fuera de la caja y encontrar soluciones alternativas e innovadoras centradas en la optimización de porcesos.",
+                        "description": "Capacidad de pensar fuera de la caja y encontrar soluciones alternativas e innovadoras centradas en la optimización de procesos.",
                         "icon": "cognition"
                     },
                     {
                         "title": "Multidisciplinaridad",
-                        "description": "Colaboración y coordinación de perfiles con diferentes roles y background teconológico.",
+                        "description": "Colaboración y coordinación de perfiles con diferentes roles y background tecnológico.",
                         "icon": "diversity_4"
                     },
                     {
@@ -107,7 +107,7 @@
                         "description": "Participación en el proyecto europeo IMOLA IV, para la creación y construcción de un sistema online de gestión de ontologías aplicado al registro de la propiedad europeo. Participación en el proyecto europeo FCAS, para el desarrollo del nuevo sistema de combate aéreo de la unión europea. Gestión del proyecto y desarrollo del sistema semántico de búsqueda para la plataforma de RTVE de visualización de contenido bajo demanda: RTVE Play. Migración del stack tecnológico de TRC a .Net Core. Product Owner del producto KMO. Product Owner del software de uso interno Doorway. Centralizacion, diseño y actualización de los iconos de las herramientas de la compañía.",
                         "dates": "MAR 22 - FEB 24",
                         "location": "Leganés, Madrid (Spain)",
-                        "tech": "Angular, .NET, .NETCore, Node, Elasticsearch, ASP.NET, SQL, XAML, SVN, Git.",
+                        "tech": "Angular, .NET, .NET Core, Node, Elasticsearch, ASP.NET, SQL, XAML, SVN, Git.",
                         "sector": "Ingeniería Informática, Multimedia, Defensa, Procesamiento del Lenguaje Natural."
                     },
                     {
