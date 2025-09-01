@@ -2,7 +2,7 @@
     {
         "info": {
             "name": "Miguel Á. Rozalén",
-            "jobTitle": "Senior Full Stack Developer",
+            "jobTitle": "Senior Software Engineer & Full Stack Developer",
             "email": "mikelangel1993@gmail.com",
             "location": "Getafe, Madrid (Spain)",
             "phoneNumber": "+34 664 14 27 24",
@@ -85,7 +85,7 @@
                 "title": "Resumen",
                 "subsections": [
                     {
-                        "description": "Soy un apasionado de la tecnología. Me encanta investigar y cacharrear tanto con el software como con el hardware. Estoy especializado en la arquitectura de computadores. No obstante, me gustan otras áreas de conocimiento como la computación ubicua, el diseño web y el desarrollo de aplicaciones móviles o distribuidas. También tengo conocimientos de Big Data, Bussiness Inteligence, inteligencia artificial, legislación aplicada a datos y estándares de procesos de auditoría y certificación."
+                        "description": "Soy un apasionado de la tecnología. Me encanta investigar y cacharrear tanto con el software como con el hardware. Estoy especializado en la arquitectura de computadores e Inteligencia Artificial. No obstante, me gustan otras áreas de conocimiento como la computación ubicua, el diseño web y el desarrollo de aplicaciones móviles o distribuidas. También tengo conocimientos de Big Data, Bussiness Inteligence, inteligencia artificial, legislación aplicada a datos y estándares de procesos de auditoría y certificación."
                     }
                 ]
             },
@@ -93,12 +93,12 @@
                 "title": "Experiencia",
                 "subsections": [
                     {
-                        "title": "Technical Solution PRO",
+                        "title": "Technical Solution en Innovación",
                         "job": "CaixaBank Tech",
-                        "description": "Participación en el proyecto de transformación de PL/I a Java en entornos IBM Mainframe utilizando IA Generativa dentro del Departamento de Innovación Interna. Definicion del plan de innovación anual, radar tecnológico y buzón de ideas.",
+                        "description": "Participación en el proyecto de transformación de PL/I a Java en entornos IBM Mainframe utilizando IA Generativa. Definicion del plan de innovación anual, radar tecnológico y buzón de ideas. Benchmarking de Modelos de IA. Automatización de procesos pesados utilizando Agentes de Inteligencia Artificial aplicando técnicas como Mixture of Experts, entre otras",
                         "dates": "FEB 24 - Actualmente",
                         "location": "Las Rozas, Madrid (España)",
-                        "tech": "PL/I, Python, Azure, Google Cloud, Power Automate, Gitlab.",
+                        "tech": "PL/I, JAVA, Node, Next.js, React, Python, Azure, Cloud, Power Automate, Copilot, Git.",
                         "sector": "Ingeniería Informática, Investigación, Innovación, Banca, Inteligencia Artificial."
                     },
                     {
@@ -108,7 +108,7 @@
                         "dates": "MAR 22 - FEB 24",
                         "location": "Leganés, Madrid (Spain)",
                         "tech": "Angular, .NET, .NET Core, Node, Elasticsearch, ASP.NET, SQL, XAML, SVN, Git.",
-                        "sector": "Ingeniería Informática, Multimedia, Defensa, Procesamiento del Lenguaje Natural."
+                        "sector": "Ingeniería Informática, Multimedia, Defensa, NLP."
                     },
                     {
                         "title": "Full Stack Developer",
@@ -162,13 +162,6 @@
             {
                 "title": "Educación y Formación",
                 "subsections": [
-                    {
-                        "title": "Doctorado en Ciencia y Tecnología Informática (en pausa)",
-                        "job": "Universidad Carlos III de Madrid (EPS)",
-                        "description": "Generación automática de ontologías mediante el procesamiento del lenguaje natural a través de inteligencia artificial.",
-                        "dates": "MAR 19 - Actualmente",
-                        "location": "Leganés, Madrid (Spain)"
-                    },
                     {
                         "title": "Máster en Ingeniería Informática",
                         "job": "Universidad Carlos III de Madrid (EPS)",
