@@ -1,12 +1,14 @@
 {
   "name": "miguel-rozalen",
+  "url":"https://miguelrozalen.github.io/me",
   "version": "3.0.0",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "deploy": "ng build --base-href \"/me/\" && ngh --message=\"Actual Deploy\""
   },
   "private": true,
   "dependencies": {
